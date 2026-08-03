@@ -45,15 +45,13 @@ Competition-oriented detection counts use:
 - class-aware one-to-one matching with IoU threshold `0.50`;
 - micro-aggregation of TP, FP, and FN over the complete validation set.
 
-The provisional metrics are defined as:
+The competition-oriented metrics are defined as:
 
 ```text
 Recall   = TP / (TP + FN)
-FAR-pred = FP / (TP + FP)
-FAR-gt   = FP / (TP + FN)
+Precision = TP / (TP + FP)
+FAR       = FP / (TP + FP) = 1 - Precision
 ```
-
-The official competition FAR formula is not defined in the available documents. Both FAR variants must therefore be treated as provisional.
 
 Standard Precision, Recall, mAP50, and mAP50–95 are also calculated separately by the Ultralytics validator. These values must not be mixed with the fixed-threshold custom operating-point metrics.
 
@@ -71,12 +69,9 @@ Results at confidence `0.50` after class-aware NMS:
 | Precision | 0.824 | — | — |
 | Recall | 0.903 | ≥0.85 | passes |
 | F1 score | 0.862 | — | — |
-| FAR-pred | 0.176 | ≤0.20* | passes provisionally |
-| FAR-gt | 0.193 | ≤0.20* | passes provisionally |
+| FAR | 0.176 | ≤0.20 | passes |
 
-\* The FAR targets are evaluated using the two provisional team definitions.
-
-Without the additional class-aware NMS, the same confidence threshold gives Precision `0.807`, Recall `0.906`, FAR-pred `0.193`, and FAR-gt `0.217`. NMS therefore reduces false detections enough for both provisional FAR variants to fall below 0.20, with a small Recall reduction.
+Without the additional class-aware NMS, the same confidence threshold gives Precision `0.807`, Recall `0.906`, and FAR `0.193`. NMS therefore reduces false detections while keeping FAR below 0.20, with a small Recall reduction.
 
 ### Standard Ultralytics validation
 
@@ -123,12 +118,12 @@ These measurements describe the provided crop-sized images and the current noteb
 | Indicator | Requirement | Baseline v1 evidence |
 |---|---:|---|
 | Overall Recall | ≥0.85 | 0.903 under the documented custom operating-point protocol |
-| FAR | ≤0.20 | 0.176 and 0.193 under two provisional definitions |
+| FAR | ≤0.20 | 0.176 (`1 - Precision`) |
 | Processing time | ≤20 seconds per 10,000×10,000 image | not yet measured |
 
-Runtime is expected to be evaluated on one NVIDIA RTX 3090 or an equivalent domestic GPU/NPU. Later information received by the team indicates that ranking may use a weighted combination of the three indicators. The exact formula, weights, normalization, and official FAR definition are not available in the current documents.
+Runtime is expected to be evaluated on one NVIDIA RTX 3090 or an equivalent domestic GPU/NPU. Later information received by the team indicates that ranking may use a weighted combination of the three indicators. The exact ranking weights and normalization are not available in the current documents.
 
-Baseline v1 therefore satisfies the current local Recall target and both provisional FAR targets on the reconstructed validation set. Full compliance with the competition requirements is not yet demonstrated because the official FAR definition and the end-to-end 10k×10k runtime are unavailable.
+Baseline v1 therefore satisfies the Recall and FAR targets on the reconstructed validation set. Full compliance with the competition requirements is not yet demonstrated because end-to-end runtime on a 10k×10k image has not been measured.
 
 ## Historical Metrics
 
@@ -136,8 +131,7 @@ Earlier saved baseline results reported Precision `0.849`, Recall `0.761`, mAP50
 
 ## Remaining Competition-Oriented Work
 
-1. Obtain or reproduce the official FAR definition and evaluator.
-2. Implement the complete 10k×10k pipeline: slicing, batched inference, coordinate merging, and global suppression.
-3. Benchmark end-to-end runtime on an RTX 3090 or equivalent device.
-4. Preserve the baseline v1 split and evaluation protocol for regression testing.
-5. Evaluate baseline v2 ablations on a separately versioned, scene-aware split with a corresponding control run.
+1. Implement the complete 10k×10k pipeline: slicing, batched inference, coordinate merging, and global suppression.
+2. Benchmark end-to-end runtime on an RTX 3090 or equivalent device.
+3. Preserve the baseline v1 split and evaluation protocol for regression testing.
+4. Evaluate baseline v2 ablations on a separately versioned, scene-aware split with a corresponding control run.

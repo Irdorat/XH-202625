@@ -12,7 +12,7 @@ The current reference model is RT-DETR-L pretrained on COCO. Baseline v1 is comp
 - Baseline v1 has been evaluated on all 896 validation images.
 - Baseline v2 will use its own versioned split and controlled ablation experiments.
 
-At the selected baseline v1 operating point (`confidence=0.50`, matching IoU `0.50`, class-aware NMS IoU `0.50`), the full validation set gives Recall `0.903`, FAR-pred `0.176`, and FAR-gt `0.193`. The standard Ultralytics evaluation gives mAP50 `0.801` and mAP50–95 `0.449`.
+At the selected baseline v1 operating point (`confidence=0.50`, matching IoU `0.50`, class-aware NMS IoU `0.50`), the full validation set gives Recall `0.903`, Precision `0.824`, and FAR `0.176`. The standard Ultralytics evaluation gives mAP50 `0.801` and mAP50–95 `0.449`.
 
 ## Repository Structure
 
