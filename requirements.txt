@@ -1,0 +1,14 @@
+ultralytics==8.4.114
+albumentations==2.0.8
+opencv-python-headless==5.0.0.93
+PyYAML==6.0.3
+numpy==2.4.4
+pandas==3.0.5
+matplotlib==3.11.1
+pillow==12.2.0
+scipy==1.18.0
+sahi==0.12.2
+ensemble-boxes==1.0.9
+pycocotools==2.0.11
+tqdm==4.70.0
+ipykernel

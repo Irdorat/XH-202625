@@ -1,0 +1,64 @@
+# Dataset archives and local data
+data/raw/
+data/generated/
+data/cache/
+
+# Keep reproducible split manifests in Git
+!data/splits/
+!data/splits/**
+
+# Model weights and exported models
+models/pretrained/
+models/trained/
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Training and inference outputs
+runs/*
+!runs/README.md
+artifacts/
+predictions/
+submissions/
+
+# Archives shared outside Git
+downloads/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Dataset and framework caches
+*.cache
+*:Zone.Identifier
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and experiment trackers
+*.log
+wandb/
+mlruns/
+
+# Local environment variables
+.env
+.env.*
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
