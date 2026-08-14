@@ -1,11 +1,5 @@
 # Dataset archives and local data
-data/raw/
-data/generated/
-data/cache/
-
-# Keep reproducible split manifests in Git
-!data/splits/
-!data/splits/**
+data
 
 # Model weights and exported models
 models/pretrained/
