@@ -70,7 +70,7 @@ Baseline v2 must use a separate directory such as `data/splits/baseline_v2/`. A 
 
 ## Data and Large Files
 
-The dataset, model weights, and experiment outputs are shared as versioned archives rather than committed to GitHub:
+The dataset and experiment outputs are shared as versioned archives rather than committed to GitHub. Curated checkpoints under `models/trained/original_labels/` and `models/trained/new_labels/` are tracked with Git LFS:
 
 ```text
 ml_comp_dataset_v1.0.tar.gz
@@ -139,7 +139,7 @@ notebooks/baseline_v1/baseline_v1_results.ipynb
 1. Never modify or move files in `data/raw`.
 2. Never create or modify a train/validation split inside an analysis notebook.
 3. Never overwrite a finalized split; create a new version instead.
-4. Do not commit datasets, `.pt` files, run directories, or archives to Git.
+4. Do not commit datasets, unselected `.pt` files, run directories, or archives to Git. Only curated checkpoints under `models/trained/original_labels/` and `models/trained/new_labels/` may be tracked through Git LFS.
 5. Save the configuration, aggregate metrics, per-class metrics, and best checkpoint for every experiment.
 6. Compare model ablations only on the same fixed split and with the same evaluation protocol.
 
