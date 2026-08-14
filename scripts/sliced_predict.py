@@ -1,6 +1,7 @@
-"""Run tiled object detection on one large image and merge the predictions."""
+"""Run tiled object detection on one large image and merge the predictions.
 
-"""for launch from ~/ML_comp
+Example launch from the repository root::
+
 python scripts/sliced_predict.py \
   --source data/test/ocean_scene_10000x10000.png \
   --weights runs/YOLO11n/yolo11n_fold1_img800_base_b4w2/weights/best_0.92475.pt \
@@ -8,10 +9,6 @@ python scripts/sliced_predict.py \
   --overlap 0.20 \
   --device 0 
 """
-
-
-
-from __future__ import annotations
 
 import argparse
 import json
