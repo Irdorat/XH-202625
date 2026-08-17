@@ -3,11 +3,17 @@ data
 
 # Model weights and exported models
 models/pretrained/
-models/trained/
+models/trained/**
 *.pt
 *.pth
 *.onnx
 *.engine
+
+# Curated trained checkpoints are versioned with Git LFS
+!models/trained/**/
+!models/trained/SHA256SUMS
+!models/trained/original_labels/**/*.pt
+!models/trained/new_labels/**/*.pt
 
 # Training and inference outputs
 runs/*
