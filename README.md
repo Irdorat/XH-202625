@@ -10,6 +10,7 @@ The current reference model is RT-DETR-L pretrained on COCO. Baseline v1 is comp
 - The organizer-provided data is stored unchanged in `data/raw`.
 - The original baseline v1 split has been reconstructed and fixed as manifests with 3,585 training images and 896 validation images.
 - Baseline v1 has been evaluated on all 896 validation images.
+- The curated YOLO26 collection contains 48 selected checkpoints; fresh per-class validation metrics are tracked for all 25 classes.
 - Baseline v2 will use its own versioned split and controlled ablation experiments.
 
 At the selected baseline v1 operating point (`confidence=0.50`, matching IoU `0.50`, class-aware NMS IoU `0.50`), the full validation set gives Recall `0.903`, Precision `0.824`, and FAR `0.176`. The standard Ultralytics evaluation gives mAP50 `0.801` and mAP50–95 `0.449`.
@@ -34,6 +35,7 @@ ML_comp/
 - `data/splits/` stores versioned train/validation manifests tracked by Git.
 - `models/pretrained/` stores original pretrained weights.
 - `models/trained/` stores selected team checkpoints.
+- `models/trained/metrics/` stores reproducible aggregate and per-class validation reports for the curated checkpoints.
 - `runs/` stores experiment metrics, plots, and temporary outputs.
 - `notebooks/` is used for analysis and validation, not for dataset mutation.
 - `docker/` will package the final competition inference solution.
@@ -118,7 +120,10 @@ python -c "import torch, ultralytics; print(torch.__version__); print(torch.cuda
 
 `configs/baseline_v1/dataset.yaml` defines the fixed baseline v1 manifests and 25 classes. `configs/baseline_v1/baseline_v1.yaml` records the experiment parameters.
 
-The standalone training and evaluation scripts are currently placeholders. Do not treat a command as implemented while its script is empty.
+The standalone training script is currently a placeholder. Batch evaluation of
+all curated checkpoints is implemented in `scripts/evaluate.py`; its committed
+reports and exact validation protocol are documented in
+[`models/trained/metrics/`](models/trained/metrics/README.md).
 
 Inference with the selected checkpoint:
 

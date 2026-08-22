@@ -53,6 +53,27 @@ Audit MAR20 for overlap with the organizer dataset:
 python scripts/find_image_duplicates.py
 ```
 
+Evaluate all curated checkpoints on the matching fold manifests and regenerate
+the aggregate and per-class reports:
+
+```bash
+python scripts/evaluate.py \
+  --original-data-dir /path/to/original-label-data \
+  --new-data-dir /path/to/new-label-data \
+  --output-dir models/trained/metrics \
+  --work-dir runs/checkpoint_per_class_metrics \
+  --image-size 800 \
+  --batch-size 64 \
+  --workers 16 \
+  --device 0 \
+  --framework-revision SOURCE_ID
+```
+
+The command reads all curated weights, validates each checkpoint against its
+own label version and fold, and writes one resumable cache per checkpoint.
+The committed report schema and metric definitions are documented in
+[`models/trained/metrics/`](../models/trained/metrics/README.md).
+
 Run end-to-end tiled inference on a large image:
 
 ```bash

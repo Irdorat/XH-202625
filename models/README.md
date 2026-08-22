@@ -17,15 +17,31 @@ trained/
 ├── original_labels/
 │   ├── yolo26n/fold0..4/weights/
 │   └── yolo26s/fold4/weights/
-└── new_labels/
-    ├── yolo26n/fold0..4/weights/
-    └── yolo26s/fold0..4/weights/
+├── new_labels/
+│   ├── yolo26n/fold0..4/weights/
+│   └── yolo26s/fold0..4/weights/
+├── metrics/        # Aggregate and 25-class validation reports
+└── SHA256SUMS
 ```
 
 Each fold contains `map_best.pt`, `precision_fdr_best.pt`, and
 `recall_best.pt`. These selected model binaries are committed through Git LFS.
 Run `git lfs install` before cloning or pulling the repository.
 `trained/SHA256SUMS` records the checksum of every tracked checkpoint.
+
+## Per-class metrics
+
+Fresh standard-validation reruns for all 48 curated checkpoints are tracked in
+[`trained/metrics/`](trained/metrics/README.md). Each checkpoint has one
+25-row CSV with Images, Instances, Precision, Recall, FDR, F1, mAP50, and
+mAP50-95 for every target class.
+
+- [`trained/metrics/per_class.csv`](trained/metrics/per_class.csv) contains all
+  1,200 checkpoint-class rows.
+- [`trained/metrics/checkpoints.csv`](trained/metrics/checkpoints.csv) contains
+  aggregate rerun metrics and deltas from the embedded selection metrics.
+- [`trained/metrics/manifest.json`](trained/metrics/manifest.json) records the
+  evaluation protocol, runtime environment, and validation-data fingerprints.
 
 ## Checkpoint selection
 
@@ -45,7 +61,8 @@ metrics embedded in each uploaded checkpoint and are rounded to five decimal
 places. They are per-fold validation results, not test-set results or
 cross-validation averages. Results for `original_labels` and `new_labels` use
 their respective annotation versions and should be compared with that
-difference in mind.
+difference in mind. For fresh reruns and per-class values, use the reports in
+[`trained/metrics/`](trained/metrics/README.md).
 
 ### Original labels — YOLO26n
 

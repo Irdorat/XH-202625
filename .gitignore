@@ -14,6 +14,7 @@ models/trained/**
 !models/trained/SHA256SUMS
 !models/trained/original_labels/**/*.pt
 !models/trained/new_labels/**/*.pt
+!models/trained/metrics/**
 
 # Training and inference outputs
 runs/*

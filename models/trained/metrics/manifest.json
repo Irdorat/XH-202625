@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-08-22T13:09:03.083027+00:00",
+  "started_at_utc": "2026-08-22T13:04:41.297652+00:00",
+  "checkpoint_count": 48,
+  "class_count": 25,
+  "per_class_row_count": 1200,
+  "class_names": {
+    "0": "HM",
+    "1": "LQS",
+    "2": "QHS",
+    "3": "MS",
+    "4": "A1_SU-35",
+    "5": "A2_C-130",
+    "6": "A3_C-17",
+    "7": "A4_C-5",
+    "8": "A5_F-16",
+    "9": "A6_TU-160",
+    "10": "A7_E-3",
+    "11": "A8_B-52",
+    "12": "A9_P-3C",
+    "13": "A10_B-1B",
+    "14": "A11_E-8",
+    "15": "A12_TU-22",
+    "16": "A13_F-15",
+    "17": "A14_KC-135",
+    "18": "A15_F-22",
+    "19": "A16_FA-18",
+    "20": "A17_TU-95",
+    "21": "A18_KC-10",
+    "22": "A19_SU-34",
+    "23": "A20_SU-24",
+    "24": "FSC"
+  },
+  "protocol": {
+    "task": "detect",
+    "split": "val",
+    "image_size": 800,
+    "batch_size": 64,
+    "workers": 16,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "augment": false,
+    "plots": false,
+    "fdr_definition": "1 - precision",
+    "precision_recall_operating_point": "Ultralytics global confidence threshold maximizing smoothed mean F1",
+    "map50_95_iou_range": "0.50:0.05:0.95"
+  },
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.31",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "ultralytics": "8.4.7",
+    "framework_revision": "source-tree-sha256:a2e714bafc0b84c3064c9b9384938c5adf0c90ade9ea9f7d982191b1a4986517",
+    "device": "0",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "datasets": {
+    "new_labels/fold0": {
+      "config_name": "data_fold0_autodl.yaml",
+      "config_sha256": "635328aea7e2f4c26c3ff8edb26e5a1cec39c159910e0985295a92c7ba2f6815",
+      "validation_source": "splits/fold0/val_autodl.txt",
+      "validation_manifest_sha256": "9ce061aa26a3a57377f5e653b16c69955f23b7a5bae333c9231dd777c4c895fe",
+      "validation_labels_sha256": "b1f1d979362186f9d8f29fb261f77c759641cbf27a5544ccf07dd2a2f67d57d3",
+      "validation_images": 846,
+      "validation_instances": 3827
+    },
+    "new_labels/fold1": {
+      "config_name": "data_fold1_autodl.yaml",
+      "config_sha256": "534b5bcbbbac5055996c6d11a34bf22eb3e00eb5d3708b258fc13d24ba6fd5ef",
+      "validation_source": "splits/fold1/val_autodl.txt",
+      "validation_manifest_sha256": "ebe0303fa0c2a38ebbba8e57ef4902eb24817c6f09f717d0761747808d1cb0b0",
+      "validation_labels_sha256": "16c8f1a6e221a0446c126abe4972878ac72879bd62d38c4934981a3ee79087a8",
+      "validation_images": 900,
+      "validation_instances": 4238
+    },
+    "new_labels/fold2": {
+      "config_name": "data_fold2_autodl.yaml",
+      "config_sha256": "b021b50c0bbd9bcb2616356fbc5c03220e9de4a8df5ab9c22541b48d893512d0",
+      "validation_source": "splits/fold2/val_autodl.txt",
+      "validation_manifest_sha256": "19122dfc0039b7183750b20d47c9840153ef21e6d9711512d43b78d1e0ea8e69",
+      "validation_labels_sha256": "396fdd613eb0ad8f88f3683951c779300af1de970ba1089b7109d8c74aabb13b",
+      "validation_images": 936,
+      "validation_instances": 4434
+    },
+    "new_labels/fold3": {
+      "config_name": "data_fold3_autodl.yaml",
+      "config_sha256": "299e31bb8e334aa4543aa99a4176c02c5ec409b12295f6bdfe01562aba97a124",
+      "validation_source": "splits/fold3/val_autodl.txt",
+      "validation_manifest_sha256": "69f31e52923e69aad27a59a7964af6c5f42885f105815bdea36ac2f68302d280",
+      "validation_labels_sha256": "7def1ac3e20ea537539f0ba4583d6ef37ccef8f94ff02b574d61f83896dcd651",
+      "validation_images": 899,
+      "validation_instances": 4182
+    },
+    "new_labels/fold4": {
+      "config_name": "data_fold4_autodl.yaml",
+      "config_sha256": "c6673134bce96c1dd7a1255a835d69cc0cb93327b8b8b74a455cea6f6424bf76",
+      "validation_source": "splits/fold4/val_autodl.txt",
+      "validation_manifest_sha256": "b0c24f0fbc670bd5aa3d3b4f7ef74b0dd6088b92c4ab3ee75ed571f920885cfb",
+      "validation_labels_sha256": "39cdb8b415974b9a0ff9608a5ea06138e20ea7fa9025f891ee307bb377144233",
+      "validation_images": 900,
+      "validation_instances": 4027
+    },
+    "original_labels/fold0": {
+      "config_name": "data_fold0_autodl.yaml",
+      "config_sha256": "17342b110efc641e9657a00b20a2fa440fe0e366e2ebde68dbdf692ae959cc91",
+      "validation_source": "splits/fold0/val_autodl.txt",
+      "validation_manifest_sha256": "2e4a5b60eb437df4660f55d84a3f389ae50b5722226c455959d649194de0de49",
+      "validation_labels_sha256": "88a4a944e1884784cf3fdb24313c1d6506211b14be9f980aa392a5c45f62fc3b",
+      "validation_images": 846,
+      "validation_instances": 3867
+    },
+    "original_labels/fold1": {
+      "config_name": "data_fold1_autodl.yaml",
+      "config_sha256": "e01f7ee9dc6e57d1840ceb7103505260acac16ae429a082e08a36b341ec9e943",
+      "validation_source": "splits/fold1/val_autodl.txt",
+      "validation_manifest_sha256": "a084328ba7769d7a8cb791ac720d25243f2162703ff95e6fd2132eb4f6d3f255",
+      "validation_labels_sha256": "2b76196622462f8351492b00a6180ec6bbaaa90d84c46efbf8d692f3741199b6",
+      "validation_images": 900,
+      "validation_instances": 4270
+    },
+    "original_labels/fold2": {
+      "config_name": "data_fold2_autodl.yaml",
+      "config_sha256": "001526daa98983a9a6cccb468f9d837ca808724f4a289aa6f7e46122512b782c",
+      "validation_source": "splits/fold2/val_autodl.txt",
+      "validation_manifest_sha256": "0446ef061b6d0eb825616ed0ea0e2686f4555fced4ba94dcfa903759d60ce447",
+      "validation_labels_sha256": "f2d9f53fdcf763521679bf218b6f097f9db165b7295c9cabb113c3678bb587bb",
+      "validation_images": 936,
+      "validation_instances": 4488
+    },
+    "original_labels/fold3": {
+      "config_name": "data_fold3_autodl.yaml",
+      "config_sha256": "fbe901382bc4c7389f36886ca13b5cc268b1ce05bf22fdb33c57d43314a7bc30",
+      "validation_source": "splits/fold3/val_autodl.txt",
+      "validation_manifest_sha256": "bc7b88da675e8e67cc38d8991d89d854e7a7787f637d0971182173475008919a",
+      "validation_labels_sha256": "b15f9cc3dbf16b7e14e7fe718f205edcf33ec0758c98da0a5d85bad7f460dd27",
+      "validation_images": 899,
+      "validation_instances": 4231
+    },
+    "original_labels/fold4": {
+      "config_name": "data_fold4_autodl.yaml",
+      "config_sha256": "35ec359b97c71dd434de8b62a44df1512d2bf2d8c584fb21cb19a5d70d3d4e41",
+      "validation_source": "splits/fold4/val_autodl.txt",
+      "validation_manifest_sha256": "56896ac8cbe4279407eb980ec172a45d9ed050112ed49511698ae7e6e84bdb64",
+      "validation_labels_sha256": "2d0e09dc156356d93a485176601dbcb4950c93aef4b1d7e7ea8a1feee3647fd9",
+      "validation_images": 900,
+      "validation_instances": 4075
+    }
+  },
+  "artifacts": {
+    "checkpoint_metrics": "checkpoints.csv",
+    "consolidated_per_class_metrics": "per_class.csv",
+    "per_checkpoint_metrics": "by_checkpoint/"
+  }
+}
