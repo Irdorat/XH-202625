@@ -46,6 +46,7 @@ in only 13 validation images, and FSC objects are substantially smaller than MS.
 
 ## Contents
 
+- `metrics/`: branch-compatible consolidated and per-checkpoint class CSVs
 - `aggregate_metrics.csv`: one row for each of the 10 completed runs
 - `per_class_metrics.csv`: 250 rows (10 runs x 25 classes)
 - `fold4_ms_fsc_metrics.csv`: focused MS/FSC comparison
