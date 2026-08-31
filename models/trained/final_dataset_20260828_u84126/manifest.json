@@ -1,0 +1,678 @@
+{
+  "schema": "xh202625-final-yolo-results-v1",
+  "created_at_utc": "2026-08-31T15:37:08.491809+00:00",
+  "source_dataset": "/root/autodl-tmp/XH202625/datasets/final_dataset_20260828",
+  "dataset_total_images": 9666,
+  "classes": [
+    "HM",
+    "LQS",
+    "QHS",
+    "MS",
+    "A1_SU-35",
+    "A2_C-130",
+    "A3_C-17",
+    "A4_C-5",
+    "A5_F-16",
+    "A6_TU-160",
+    "A7_E-3",
+    "A8_B-52",
+    "A9_P-3C",
+    "A10_B-1B",
+    "A11_E-8",
+    "A12_TU-22",
+    "A13_F-15",
+    "A14_KC-135",
+    "A15_F-22",
+    "A16_FA-18",
+    "A17_TU-95",
+    "A18_KC-10",
+    "A19_SU-34",
+    "A20_SU-24",
+    "FSC"
+  ],
+  "environment": {
+    "python": "/root/miniconda3/bin/python",
+    "ultralytics_version": "8.4.126",
+    "ultralytics_path": "/root/miniconda3/lib/python3.10/site-packages/ultralytics/__init__.py",
+    "training_gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "source_runs": [
+    {
+      "model": "yolo26n",
+      "fold": 0,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold0_u84126/yolo26n_final_fold0_img800_musgd_lr005_b64w16_u84126",
+      "packaged": "yolo26n/fold0"
+    },
+    {
+      "model": "yolo26n",
+      "fold": 1,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold1_u84126/yolo26n_final_fold1_img800_musgd_lr005_b64w16_u84126",
+      "packaged": "yolo26n/fold1"
+    },
+    {
+      "model": "yolo26n",
+      "fold": 2,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold2_u84126/yolo26n_final_fold2_img800_musgd_lr005_b64w16_u84126",
+      "packaged": "yolo26n/fold2"
+    },
+    {
+      "model": "yolo26n",
+      "fold": 3,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold3_u84126/yolo26n_final_fold3_img800_musgd_lr005_b64w16_u84126",
+      "packaged": "yolo26n/fold3"
+    },
+    {
+      "model": "yolo26n",
+      "fold": 4,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold4_u84126/yolo26n_final_fold4_img800_musgd_lr005_b64w16_u84126",
+      "packaged": "yolo26n/fold4"
+    },
+    {
+      "model": "yolo26s",
+      "fold": 0,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold0_u84126/yolo26s_final_fold0_img800_musgd_lr005_b32w16_u84126",
+      "packaged": "yolo26s/fold0"
+    },
+    {
+      "model": "yolo26s",
+      "fold": 1,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold1_u84126/yolo26s_final_fold1_img800_musgd_lr005_b32w16_u84126",
+      "packaged": "yolo26s/fold1"
+    },
+    {
+      "model": "yolo26s",
+      "fold": 2,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold2_u84126/yolo26s_final_fold2_img800_musgd_lr005_b32w16_u84126",
+      "packaged": "yolo26s/fold2"
+    },
+    {
+      "model": "yolo26s",
+      "fold": 3,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold3_u84126/yolo26s_final_fold3_img800_musgd_lr005_b32w16_u84126",
+      "packaged": "yolo26s/fold3"
+    },
+    {
+      "model": "yolo26s",
+      "fold": 4,
+      "source": "/root/autodl-tmp/XH202625/runs_final_dataset_fold4_u84126/yolo26s_final_fold4_img800_musgd_lr005_b32w16_u84126",
+      "packaged": "yolo26s/fold4"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 2498,
+      "sha256": "1870238e684d3a67a9f18e1e7efd9e49003dbb6c17c69bedb87d0523f9748b75"
+    },
+    {
+      "path": "aggregate_metrics.csv",
+      "size_bytes": 1634,
+      "sha256": "781dd541e11f272c3e03072635f87600525b45aa19bff4012a70f5f02966328e"
+    },
+    {
+      "path": "dataset_splits.csv",
+      "size_bytes": 931,
+      "sha256": "f194a2566b18c8f1638a8bc9cdce47a286f84dffadcfb33298ba3a70e0d4acb4"
+    },
+    {
+      "path": "fold4_ms_fsc_metrics.csv",
+      "size_bytes": 336,
+      "sha256": "34b3b3abb1fc09a68a6ebde5dd76ee2268cb8a9735a67291f5c0f28c9f1ddecb"
+    },
+    {
+      "path": "per_class_metrics.csv",
+      "size_bytes": 16591,
+      "sha256": "f8800ec74519b205fe6a8fcd50046459ad13f89870bfc2acf234f2633b86eeb9"
+    },
+    {
+      "path": "yolo26n/fold0/BoxF1_curve.png",
+      "size_bytes": 239954,
+      "sha256": "1d32f0910d70d27c938534890e7c7db92d466565c66d26313ab70a863d3d7c56"
+    },
+    {
+      "path": "yolo26n/fold0/BoxPR_curve.png",
+      "size_bytes": 124242,
+      "sha256": "9366255b39f4f9abcb8f5080be63a2ac529803e02441f735cd9d98d95ef3dfec"
+    },
+    {
+      "path": "yolo26n/fold0/BoxP_curve.png",
+      "size_bytes": 185387,
+      "sha256": "f63616133441d8429f21c299da53e88430e5303eea83f16f102e183ce704db4f"
+    },
+    {
+      "path": "yolo26n/fold0/BoxR_curve.png",
+      "size_bytes": 230928,
+      "sha256": "57d637f028ef4263cc465e350f1f5baa4579bff9658dc37dacad95e09f9ca92b"
+    },
+    {
+      "path": "yolo26n/fold0/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "b812862685c61ed40d899ab7203d1f22be683755692671852c98f70f83a4529f"
+    },
+    {
+      "path": "yolo26n/fold0/confusion_matrix.png",
+      "size_bytes": 336386,
+      "sha256": "a99a3ad7f03669a241c739728de51f94925a56a2003f556f740aff240c2bf3f3"
+    },
+    {
+      "path": "yolo26n/fold0/confusion_matrix_normalized.png",
+      "size_bytes": 386780,
+      "sha256": "7d2b9c17989b2be05fec7d8fc3d158c1eea8524acdabbdf853d8843292fc19cd"
+    },
+    {
+      "path": "yolo26n/fold0/results.csv",
+      "size_bytes": 23585,
+      "sha256": "e1fd2aea0defd2348c74bfb4e384efd3bd6bc934de33addc2390583ef3bf9539"
+    },
+    {
+      "path": "yolo26n/fold0/results.png",
+      "size_bytes": 247688,
+      "sha256": "36fbe3624eef38b8c95cfc4315881c70312dd2c01b441ca51756d1bc4a098282"
+    },
+    {
+      "path": "yolo26n/fold0/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "dd1703ec4673f0bc6643d81ce936a4c7e67bf667ffcc3ee40a5cfe691b654d69"
+    },
+    {
+      "path": "yolo26n/fold0/weights/best.pt",
+      "size_bytes": 5452421,
+      "sha256": "a36a23ab6800cc3f81931815f92403388485c1b7e18718a3370cf1982b0b3b08"
+    },
+    {
+      "path": "yolo26n/fold1/BoxF1_curve.png",
+      "size_bytes": 261418,
+      "sha256": "f05d414627400063b06aa4f7d0c8ba65420b348c94ff4d5de53cc51a349c04a8"
+    },
+    {
+      "path": "yolo26n/fold1/BoxPR_curve.png",
+      "size_bytes": 131014,
+      "sha256": "24149d81f1a304378f90ec75c0b0c430c07f323d079d4e7ce4e422372e743012"
+    },
+    {
+      "path": "yolo26n/fold1/BoxP_curve.png",
+      "size_bytes": 207069,
+      "sha256": "6f821fa487cb5aaf0592538f028d4cf0f2086bca458349926a9f06fd81037d52"
+    },
+    {
+      "path": "yolo26n/fold1/BoxR_curve.png",
+      "size_bytes": 245446,
+      "sha256": "8be42ca9edc2be76b7aed778368ed8832350af3b5ccff854635dffaa2c2986d8"
+    },
+    {
+      "path": "yolo26n/fold1/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "bb70028b7410c363a4cf152779c73e3fd505ce2cb7af8495ac1fc36bd9874a57"
+    },
+    {
+      "path": "yolo26n/fold1/confusion_matrix.png",
+      "size_bytes": 341077,
+      "sha256": "535dce9b4d716e7adfc00be66b2b21ae4d9e719cbd334d8204d2d69848d17319"
+    },
+    {
+      "path": "yolo26n/fold1/confusion_matrix_normalized.png",
+      "size_bytes": 398319,
+      "sha256": "315f97c440d5199de2291e73f226140c068354a0ddee2142b8c4336914fe3a57"
+    },
+    {
+      "path": "yolo26n/fold1/results.csv",
+      "size_bytes": 23238,
+      "sha256": "ac3c1773eee4e0639bec679b5c6761ecb039719fe369110e1d037e4ae00a8b9d"
+    },
+    {
+      "path": "yolo26n/fold1/results.png",
+      "size_bytes": 242985,
+      "sha256": "0e627375bf9e3173ae035a329ac219ca427cd91a98f8764f508e580e2a3a5dd8"
+    },
+    {
+      "path": "yolo26n/fold1/training_complete.json",
+      "size_bytes": 1126,
+      "sha256": "d6582dec758a49bda48519c29664dd34a7efa9d0991053d46fe735c3d31d77b9"
+    },
+    {
+      "path": "yolo26n/fold1/weights/best.pt",
+      "size_bytes": 5448773,
+      "sha256": "a61e213e20bc7f13d066d2c3a934b38e97a89d1d0b140c0e668948c7d83765df"
+    },
+    {
+      "path": "yolo26n/fold2/BoxF1_curve.png",
+      "size_bytes": 254105,
+      "sha256": "304ac5dae2062ea296310e5af72a09fd7301e5eb62ac465edf1ee7e8d3faa6b8"
+    },
+    {
+      "path": "yolo26n/fold2/BoxPR_curve.png",
+      "size_bytes": 122054,
+      "sha256": "464394632aea12f7976fb02f77bc3db1adb2f4b0fdb7d5e716113195e67dbdbe"
+    },
+    {
+      "path": "yolo26n/fold2/BoxP_curve.png",
+      "size_bytes": 190340,
+      "sha256": "4e2ac2f6355bedf5e8eb7ccc203cd80429f61a871b44503871627592b84bd206"
+    },
+    {
+      "path": "yolo26n/fold2/BoxR_curve.png",
+      "size_bytes": 240343,
+      "sha256": "558bff00fb0cb065b792caa8c4392bbe5c8e973960ea41c766a7cf7c2a2afd10"
+    },
+    {
+      "path": "yolo26n/fold2/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "73688664487c6b354f87b6850198d1da63d2f01389ccff31e960f444a7d419f0"
+    },
+    {
+      "path": "yolo26n/fold2/confusion_matrix.png",
+      "size_bytes": 336777,
+      "sha256": "d3a91c5769d2a982727244923d581cc39fff030f407157c8ebf0baa1d8e0a981"
+    },
+    {
+      "path": "yolo26n/fold2/confusion_matrix_normalized.png",
+      "size_bytes": 385501,
+      "sha256": "cd835edf981483fa11c07f0eacf20ec50e950e08c8caaab73af4dc4f205a6406"
+    },
+    {
+      "path": "yolo26n/fold2/results.csv",
+      "size_bytes": 26749,
+      "sha256": "7d7f43024f45836fbdaeabe7703299a455c316f127579b9487029bed95e89f88"
+    },
+    {
+      "path": "yolo26n/fold2/results.png",
+      "size_bytes": 244583,
+      "sha256": "3cfae00b4e829a58834f2fbd0ef2bf371ea597c10226757772d83de885cb2aba"
+    },
+    {
+      "path": "yolo26n/fold2/training_complete.json",
+      "size_bytes": 1130,
+      "sha256": "ecaf31de50019f1eab9f2089b325c4591c55f730fc59f09dce6dcbc7ddc3ce54"
+    },
+    {
+      "path": "yolo26n/fold2/weights/best.pt",
+      "size_bytes": 5455365,
+      "sha256": "7e4e7d0ca52139775e23c0e4b6a64f0328295af23249b84327d63dc252a30daf"
+    },
+    {
+      "path": "yolo26n/fold3/BoxF1_curve.png",
+      "size_bytes": 281362,
+      "sha256": "85268dc3bfbca971a59f733f1f22bbce095753e6b3da6b58a9bc0dd8777ee0e7"
+    },
+    {
+      "path": "yolo26n/fold3/BoxPR_curve.png",
+      "size_bytes": 141774,
+      "sha256": "145426f44cee407fcfaf515824a609fd0e0156c73ee0933b771000cab92afe7e"
+    },
+    {
+      "path": "yolo26n/fold3/BoxP_curve.png",
+      "size_bytes": 221290,
+      "sha256": "a0976cd7ef4b606d9a8c75f7d399c1bf9937c44dbfc0d93301724365b24141bb"
+    },
+    {
+      "path": "yolo26n/fold3/BoxR_curve.png",
+      "size_bytes": 259393,
+      "sha256": "480cefdefff73c1cb242f373b31819a72bedaab840807b7d9927fe9e2b6c8695"
+    },
+    {
+      "path": "yolo26n/fold3/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "d7af7ae2ca4c686680b3a364ccf56dd1763853b4dd50f769b2d65680e7828563"
+    },
+    {
+      "path": "yolo26n/fold3/confusion_matrix.png",
+      "size_bytes": 343744,
+      "sha256": "dbd576f6e22764354e8ecea61ac27e25ed6633a476ed910170886e6badb9aebe"
+    },
+    {
+      "path": "yolo26n/fold3/confusion_matrix_normalized.png",
+      "size_bytes": 401345,
+      "sha256": "eb227b8242f8217676b1e38a9ebc8ceb9b2ec0d41a1dcdfbf5dd99d3f1b15010"
+    },
+    {
+      "path": "yolo26n/fold3/results.csv",
+      "size_bytes": 25833,
+      "sha256": "e05fab5112d1c0e14e7219cb3715d096e9b5c058ef768a6c6355575aac45cf0b"
+    },
+    {
+      "path": "yolo26n/fold3/results.png",
+      "size_bytes": 241072,
+      "sha256": "202d51ae56d76e13b3667981107403924f6580c943ada17c9c16ead6fbf7c027"
+    },
+    {
+      "path": "yolo26n/fold3/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "90f5046e000da86454126a4b8efe45911cb010fc894a4f04f11bdc6af7081647"
+    },
+    {
+      "path": "yolo26n/fold3/weights/best.pt",
+      "size_bytes": 5444613,
+      "sha256": "303d016ddc6aa76da7dce95462b36cf8ebb6c69fa0ca46e807cf1b0f8a4aa1f4"
+    },
+    {
+      "path": "yolo26n/fold4/BoxF1_curve.png",
+      "size_bytes": 241560,
+      "sha256": "3f62874e70999f7b75cc60444264de5d564437804209db1c0640e02d1eea605b"
+    },
+    {
+      "path": "yolo26n/fold4/BoxPR_curve.png",
+      "size_bytes": 123132,
+      "sha256": "d32539da8082b4c8594be6bef3361a5eaaea69273550e2cee255f5b56db19756"
+    },
+    {
+      "path": "yolo26n/fold4/BoxP_curve.png",
+      "size_bytes": 173446,
+      "sha256": "695ee1e5f19286fa25f210841def0c827f8a1fd6a6d1464922e1cee79745027c"
+    },
+    {
+      "path": "yolo26n/fold4/BoxR_curve.png",
+      "size_bytes": 242841,
+      "sha256": "7d7b9bfc877f82ed86d95dcdde34f118024dc10c2ffb85a1fd3b65a372991fe1"
+    },
+    {
+      "path": "yolo26n/fold4/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "1def02d7c2a991b675082cfa8512bdf0fa36a9db265abd6519944018b9418b42"
+    },
+    {
+      "path": "yolo26n/fold4/confusion_matrix.png",
+      "size_bytes": 330776,
+      "sha256": "14ab748c3a7b40fbcb687878d96cef6552f298944e09cce6aac229b3aded4d97"
+    },
+    {
+      "path": "yolo26n/fold4/confusion_matrix_normalized.png",
+      "size_bytes": 377797,
+      "sha256": "bdbefa928e312623e107cfa0c68b42cf882b4db5f3b2c164a872f7cef066b34e"
+    },
+    {
+      "path": "yolo26n/fold4/results.csv",
+      "size_bytes": 24732,
+      "sha256": "148ecf72c68e54dc52cf5fba5ba30aefb321c3ac551e662cce6a6023a19cc21f"
+    },
+    {
+      "path": "yolo26n/fold4/results.png",
+      "size_bytes": 242049,
+      "sha256": "813a0f5e35399f309b4f6c01161767c2f78dde6b058f51504a1dd55ec42b4da8"
+    },
+    {
+      "path": "yolo26n/fold4/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "22012f0b36e47d4143861d737b0ad22d75088772476a67a4eba1b8301d7c684c"
+    },
+    {
+      "path": "yolo26n/fold4/weights/best.pt",
+      "size_bytes": 5450181,
+      "sha256": "2cab25a73b051ebee622e9d8aa2f862021b8f2e3c82897f3bcaed79190c05c00"
+    },
+    {
+      "path": "yolo26s/fold0/BoxF1_curve.png",
+      "size_bytes": 242919,
+      "sha256": "8b09746f5bced0d99921a1f3c46d509dea6ebe1c1932121b1cf394d752a92790"
+    },
+    {
+      "path": "yolo26s/fold0/BoxPR_curve.png",
+      "size_bytes": 115544,
+      "sha256": "244d2b2fbb4ef21d1896b61c90c425749da7253c1328dd47c598c22751b5ddd7"
+    },
+    {
+      "path": "yolo26s/fold0/BoxP_curve.png",
+      "size_bytes": 169692,
+      "sha256": "f355f0f7eea96e20ab2d5224b9f3e497a0e14e18fde9d80f4cf7d7105f3c312c"
+    },
+    {
+      "path": "yolo26s/fold0/BoxR_curve.png",
+      "size_bytes": 236597,
+      "sha256": "f94f82df4f781228aec209470a2336f92d27291348258f100c9939db093b3aed"
+    },
+    {
+      "path": "yolo26s/fold0/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "c9d11e311a47c74d126567cfb051eca6c66c22665a3d9c194e64fdd710e27cbe"
+    },
+    {
+      "path": "yolo26s/fold0/confusion_matrix.png",
+      "size_bytes": 337319,
+      "sha256": "ae60e666bf69a3b60339993f5e7f9031ecccb9aa6b39451ca14d1d029da0fe5e"
+    },
+    {
+      "path": "yolo26s/fold0/confusion_matrix_normalized.png",
+      "size_bytes": 383653,
+      "sha256": "8407760b23c0e6458a3f64c3bab796080a63d71d13d028b9d29212e7ca0d49d9"
+    },
+    {
+      "path": "yolo26s/fold0/results.csv",
+      "size_bytes": 20869,
+      "sha256": "17aaefacd7775eceaede96c1896cc7d5ee1ebea1592575401f4874a75b48b2a2"
+    },
+    {
+      "path": "yolo26s/fold0/results.png",
+      "size_bytes": 254980,
+      "sha256": "e37d1a183798f940024db576007751211e4f8fdd6db302dd7cc3ba5da86a2e6e"
+    },
+    {
+      "path": "yolo26s/fold0/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "97541fdce8c6740cd8d4a08d88ff09a4fdeb62d1c52f4db0018654a95c8d37b4"
+    },
+    {
+      "path": "yolo26s/fold0/weights/best.pt",
+      "size_bytes": 20392709,
+      "sha256": "d0313605f9d78b05090118c5d12c5bc71598b950f152f9a64d9b8c78207d5784"
+    },
+    {
+      "path": "yolo26s/fold1/BoxF1_curve.png",
+      "size_bytes": 285219,
+      "sha256": "ac3740067b5627b9902a8ef49c85d5dab6095be0f19b366564e7bc63066e9cf4"
+    },
+    {
+      "path": "yolo26s/fold1/BoxPR_curve.png",
+      "size_bytes": 129618,
+      "sha256": "0d4de15a349f2f9dcc0fc2e780485f28c6391ffefd6813ebbefb6f9f2093af09"
+    },
+    {
+      "path": "yolo26s/fold1/BoxP_curve.png",
+      "size_bytes": 230346,
+      "sha256": "f3b2b510fbb9bdce8f480c32fbc992b60a87969074d85da8aed2a78cfb376dd4"
+    },
+    {
+      "path": "yolo26s/fold1/BoxR_curve.png",
+      "size_bytes": 270265,
+      "sha256": "66f0089d3467a8fdd4362b0b6d0c6b3ef593fecc3a5c0ebddf448f8976a09bf5"
+    },
+    {
+      "path": "yolo26s/fold1/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "0b29df1159ed853f9f06ac2dbb60912962505769e991cd9c90d1545af5fc1548"
+    },
+    {
+      "path": "yolo26s/fold1/confusion_matrix.png",
+      "size_bytes": 344350,
+      "sha256": "407480bad6712d01148bba88471814b8bba840b3141be9a51fccd5f99534e4a4"
+    },
+    {
+      "path": "yolo26s/fold1/confusion_matrix_normalized.png",
+      "size_bytes": 399397,
+      "sha256": "8c49f18c07f3fda02d444c23c8f7d0e0be395943e6ad7e61d5da7015a2b8d706"
+    },
+    {
+      "path": "yolo26s/fold1/results.csv",
+      "size_bytes": 18154,
+      "sha256": "42c10fa4fcd9822c9db7d99aa61fcf944b963a90837f8eb2e4a656361225ceb1"
+    },
+    {
+      "path": "yolo26s/fold1/results.png",
+      "size_bytes": 254409,
+      "sha256": "65d10a48c5ca849654f4ed442c522020ccdf236d8f4161fbcbbcb88166b797ec"
+    },
+    {
+      "path": "yolo26s/fold1/training_complete.json",
+      "size_bytes": 1128,
+      "sha256": "95c21a2eea1fcab21e2fd5d02966c1a402c44e8cc98763fb4b296817367a3922"
+    },
+    {
+      "path": "yolo26s/fold1/weights/best.pt",
+      "size_bytes": 20386885,
+      "sha256": "db2df3de07c8f9e4699a5d90cfaf7bd12b8394f528c61601c62e4d1b14a139d3"
+    },
+    {
+      "path": "yolo26s/fold2/BoxF1_curve.png",
+      "size_bytes": 239222,
+      "sha256": "944a209ebe44aa76399a96c28fca107db35191ed3d42e929c2ff75aa3a80a0c2"
+    },
+    {
+      "path": "yolo26s/fold2/BoxPR_curve.png",
+      "size_bytes": 116911,
+      "sha256": "7e092672b51f2a21b0f376f16afc961086a15ca93535f50cf05328b98e610a87"
+    },
+    {
+      "path": "yolo26s/fold2/BoxP_curve.png",
+      "size_bytes": 186157,
+      "sha256": "7c967a4cb8e7263063f104efa84e0a4cd3ba9861ccbc554a97d6cbfb62423d97"
+    },
+    {
+      "path": "yolo26s/fold2/BoxR_curve.png",
+      "size_bytes": 229227,
+      "sha256": "b3a93a55b68fc0422d97272837e56d32da773e42af9f1807ffba035893638935"
+    },
+    {
+      "path": "yolo26s/fold2/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "de4d383b7eb7e6b92b70b43ba28c0e35a4cd5a30d102f34bfc574b09932c2501"
+    },
+    {
+      "path": "yolo26s/fold2/confusion_matrix.png",
+      "size_bytes": 336729,
+      "sha256": "ffa8ff3410af25ce9ba409dbda376ef156ad7c56263329005f00143943d9ee86"
+    },
+    {
+      "path": "yolo26s/fold2/confusion_matrix_normalized.png",
+      "size_bytes": 395232,
+      "sha256": "564c17e63aef2e99e5c93442875e935b6dc880e76d699b497685ab63b0873ce5"
+    },
+    {
+      "path": "yolo26s/fold2/results.csv",
+      "size_bytes": 20474,
+      "sha256": "97272780907a1aa5416df12961cfe017a6915e444754c8b39bf3b9664cfd2c16"
+    },
+    {
+      "path": "yolo26s/fold2/results.png",
+      "size_bytes": 250246,
+      "sha256": "975b984778a65da8d9e951190bb7ac87c31f34155ec38d7af76fd1e76d2b7083"
+    },
+    {
+      "path": "yolo26s/fold2/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "e2b6bb2e15ff703333f97365a75e82ba52a9ba99900f45d8ba69ecf22fc46c5e"
+    },
+    {
+      "path": "yolo26s/fold2/weights/best.pt",
+      "size_bytes": 20392389,
+      "sha256": "74c6163096969496f5f88a0db73359fe671598a402522c1a1847ac2382a11a7c"
+    },
+    {
+      "path": "yolo26s/fold3/BoxF1_curve.png",
+      "size_bytes": 261278,
+      "sha256": "1ccabffcc4a786de52a6b08a37181a056d116473a52063d5e6bb44325aa8c516"
+    },
+    {
+      "path": "yolo26s/fold3/BoxPR_curve.png",
+      "size_bytes": 130663,
+      "sha256": "f6d033951febd15d970d76c065794f0f75a7e5a8e07adf905acd53bc56899e75"
+    },
+    {
+      "path": "yolo26s/fold3/BoxP_curve.png",
+      "size_bytes": 198576,
+      "sha256": "1cd3fcd4b59203f6627ab698c756ccf52aafe9395bab705016a2cf0c190c0191"
+    },
+    {
+      "path": "yolo26s/fold3/BoxR_curve.png",
+      "size_bytes": 235007,
+      "sha256": "1e2fc05620d10ea5ead9ca041c768d9d76883cbc799a7cc74eb4202146f8dd23"
+    },
+    {
+      "path": "yolo26s/fold3/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "a4b365229433936dcc654169191a81cdf4b4fbb8b7ceaa17789c205b27388c2d"
+    },
+    {
+      "path": "yolo26s/fold3/confusion_matrix.png",
+      "size_bytes": 341982,
+      "sha256": "10d28c2310e5329c8210e3c64cbcd7b07956a55964893b14d9d1d69e30dff99e"
+    },
+    {
+      "path": "yolo26s/fold3/confusion_matrix_normalized.png",
+      "size_bytes": 390340,
+      "sha256": "54ae5413579cbeb506306b77bb9951d1e9daae9be2ff709631a7a1668ec5507f"
+    },
+    {
+      "path": "yolo26s/fold3/results.csv",
+      "size_bytes": 20664,
+      "sha256": "411b27dd0434ed5d0b1757360c32645ce5beac375ad149835b3190e86d6a4720"
+    },
+    {
+      "path": "yolo26s/fold3/results.png",
+      "size_bytes": 252592,
+      "sha256": "7a29baf36aeb15be84aa6286aa1db2c2ca2e4a91e57c78964f8d0e7ee3f2bbd4"
+    },
+    {
+      "path": "yolo26s/fold3/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "d2a8dc895cb30dea6643f0277f0fd23f5cd95c1fc88a97ce716e4b040c010727"
+    },
+    {
+      "path": "yolo26s/fold3/weights/best.pt",
+      "size_bytes": 20382661,
+      "sha256": "b73e3fc72abbc5740f1f08893385b63a18572f44ac06f52c6595720fa48ea39f"
+    },
+    {
+      "path": "yolo26s/fold4/BoxF1_curve.png",
+      "size_bytes": 225505,
+      "sha256": "f98265960a9d2519111ca9390e0134e9faa255c6a5caff5bbcda581104d0394f"
+    },
+    {
+      "path": "yolo26s/fold4/BoxPR_curve.png",
+      "size_bytes": 113158,
+      "sha256": "4969ee7f62317d10130338a5984b59059f993fcba4af217f42889bf88e41363b"
+    },
+    {
+      "path": "yolo26s/fold4/BoxP_curve.png",
+      "size_bytes": 166596,
+      "sha256": "7ea20ab359397140fcf900139d1e8176db7746d3d56a563cf31f146ab7d58cac"
+    },
+    {
+      "path": "yolo26s/fold4/BoxR_curve.png",
+      "size_bytes": 227544,
+      "sha256": "7d73d517f38fd0d7fd0c0450f382b3db9241c364a5744c5f1f529b8c8638435d"
+    },
+    {
+      "path": "yolo26s/fold4/args.yaml",
+      "size_bytes": 1957,
+      "sha256": "624edb16f3fba85885c38ae02ab46e62e70d552378e6358cc57ff556c37ccdf1"
+    },
+    {
+      "path": "yolo26s/fold4/confusion_matrix.png",
+      "size_bytes": 331418,
+      "sha256": "397dfab6a7a35b44aa57697151d87995eeb46a6688c959c5b977bbac1578aaa0"
+    },
+    {
+      "path": "yolo26s/fold4/confusion_matrix_normalized.png",
+      "size_bytes": 382453,
+      "sha256": "49dcb61f24313b0442bcaacdd405f7a3b07e04beaeeae627fe5daadc2d88e18d"
+    },
+    {
+      "path": "yolo26s/fold4/results.csv",
+      "size_bytes": 23789,
+      "sha256": "d48b940edfcc8307c38c66c69f4cdb0ea3f933fe4e8563fcaf823ad45ae3163f"
+    },
+    {
+      "path": "yolo26s/fold4/results.png",
+      "size_bytes": 249760,
+      "sha256": "2daea4623d26e0c7af179f8d7b9d4b170accc3abbcd8b0ece1f2b1e0b5ab837d"
+    },
+    {
+      "path": "yolo26s/fold4/training_complete.json",
+      "size_bytes": 1129,
+      "sha256": "374c7f759d0709b5a20f295bb8a1529e0759c4322b95a72e85fce4580c0655e7"
+    },
+    {
+      "path": "yolo26s/fold4/weights/best.pt",
+      "size_bytes": 20392197,
+      "sha256": "6bbfcdc267e6efdc1a4461425e63f3782df10bd9c4b881943c638c5ee4cc5f4b"
+    }
+  ]
+}

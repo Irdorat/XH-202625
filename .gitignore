@@ -15,6 +15,7 @@ models/trained/**
 !models/trained/original_labels/**/*.pt
 !models/trained/new_labels/**/*.pt
 !models/trained/metrics/**
+!models/trained/final_dataset_20260828_u84126/**
 
 # Training and inference outputs
 runs/*
