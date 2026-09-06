@@ -58,7 +58,7 @@ SOURCE_TO_TARGET_NAME = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("data/extra_datasets/ShipRSImage"))
+    parser.add_argument("--source", type=Path, default=Path("data/extra_dataset/ShipRSImage"))
     parser.add_argument("--output", type=Path, default=Path("data/generated/shiprsimage_4class"))
     parser.add_argument(
         "--ambiguous-policy",

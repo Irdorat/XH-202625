@@ -50,7 +50,7 @@ SOURCE_TO_TARGET = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=Path("data/extra_datasets/MAR20"))
+    parser.add_argument("--source", type=Path, default=Path("data/extra_dataset/MAR20"))
     parser.add_argument("--output", type=Path, default=Path("data/generated/mar20_20class"))
     parser.add_argument(
         "--exclude-reference",
